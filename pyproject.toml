@@ -1,0 +1,12 @@
+[project]
+name = "novarestorecheck"
+version = "0.1.0"
+requires-python = ">=3.13"
+[project.scripts]
+novarestorecheck = "novarestorecheck:main"
+[tool.hatch.build.targets.wheel]
+packages = ["src/novarestorecheck"]
+license = {text = "Apache-2.0"}
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
